@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jambojet || Home</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
 <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.min.css') }}">
 
 </head>
@@ -33,7 +34,7 @@
     
    </nav>
    </div>
-   <div class="container-fluid mt-5">
+   <div class="container-fluid mt-3">
    <nav class="navbar navbar-expand-md navbar-light nav-background nav-bg justify-content-end">
 
 
@@ -62,6 +63,67 @@
           </div>
 
 
+<div class="container-fluid mt-3">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="{{ asset('/images\gomadrcv2.jpg') }}" style="width:100%">
+  
+</div>
+<div class="container-fluid">
+<div class="mySlides  fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="{{ asset('/images\jambojet_bombardier_aircraft_at_diani_beach_ukunda_airport-scaled.jpg') }}" style="width:100%" height="350px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="{{ asset('/images\jambo-jet.webp') }}" style="width:100%" height="350px">
+  
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+    </div>
+
+    </div>
+
+
+
+    <div class="container text-center pb-5">
+    <div class="container container-bg ">
+    <a href="" class=" container-bg rounded pt-2 pb-2 px-3 book-flight-link"> BOOK FLIGHT</a>
+    <a href="" class=" bg-light rounded pt-2 pb-2 px-3 default-color link"> CHECK IN</a>
+    <a href="" class=" bg-light rounded pt-2 pb-2 px-3 default-color link"> MANAGE MY BOOKING</a>
+    
+    <form action="" method="post">
+
+    <div class="container form-group mt-5">
+    <label class="btn btn-light default-color px-2">
+<input type="radio" name="travel" id="" class="btn " >One Way </label>
+<label class="btn btn-light default-color px-2"><input type="radio" name="travel" id="" class="btn ">Round Trip </label>
+<label class="btn btn-light default-color px-2"><input type="radio" name="travel" id="" autocomplete="off">Multicity </label>
+</div>
+<div class="mt-3 ">
+<input type="text" value="" placeholder="From"><img src="" alt="">
+<input type="text" placeholder="To">
+
+</div>
+
+</form>
+
+    </div> 
+   
+    </div>
 
     
 </body>
