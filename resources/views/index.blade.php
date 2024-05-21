@@ -105,20 +105,22 @@
     <a href="" class=" bg-light rounded pt-2 pb-2 px-3 default-color link"> CHECK IN</a>
     <a href="" class=" bg-light rounded pt-2 pb-2 px-3 default-color link"> MANAGE MY BOOKING</a>
     
-    <form action="" method="post">
-
+    <form action="{{ route('search-flight') }}" method="post">
+    {{ method_field('POST') }}
+    @csrf
+    
     <div class="container form-group mt-5">
     <label class="btn btn-light default-color px-2">
-<input type="radio" name="travel" id="" class="btn " >One Way </label>
-<label class="btn btn-light default-color px-2"><input type="radio" name="travel" id="" class="btn ">Round Trip </label>
-<label class="btn btn-light default-color px-2"><input type="radio" name="travel" id="" autocomplete="off">Multicity </label>
+<input type="radio" name="travel" id="" class="btn " value="One way">One Way </label>
+<label class="btn btn-light default-color px-2"><input type="radio" name="travel" id="" class="btn " value="Round trip">Round Trip </label>
+<label class="btn btn-light default-color px-2"><input type="radio" name="travel" id="" value="Multicity">Multicity </label>
 </div>
 <div class="mt-3 form-group ">
-<input type="text" value="" placeholder="From"><img src="" alt="">
-<input type="text" placeholder="To">
-<input type="date">
-<input type="number">
-<input type="submit" value="Search">
+<input type="text" value="" placeholder="From" name="from" required><img src="" alt="">
+<input type="text" placeholder="To" name="to" required>
+<input type="date" name="date">
+<input type="number" name="numberOfPeople" required>
+<input type="submit" value="Search" required>
 </div>
 
 </form>
