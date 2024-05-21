@@ -28,7 +28,7 @@
 </li>
             <li class="nav-item px-2 pt-2"><img src="{{ asset('/images/search_24dp_FILL0_wght400_GRAD0_opsz24.svg') }}" alt=""></li>
             <li class="nav-item px-2 pt-2"><img src="{{ asset('/images/language_24dp_FILL0_wght400_GRAD0_opsz24.svg') }}" alt=""></li>
-            <li class="nav-item px-2 pt-2"><a href="" class="login default-color" ><img src="{{ asset('/images/group_24dp_FILL0_wght400_GRAD0_opsz24.svg') }}" alt=" " class="px-2">Loyalty Log in</a></li>
+            <li class="nav-item px-2 pt-2"><a href="{{route('login')}}" class="login default-color" ><img src="{{ asset('/images/group_24dp_FILL0_wght400_GRAD0_opsz24.svg') }}" alt=" " class="px-2">Loyalty Log in</a></li>
         </ul>
     </div>
     
@@ -103,7 +103,7 @@
         </table>
         </div>
         <div class="col float-left pt-3">
-        <a href="" class="links btn btn-primary text-white">Next</a>
+        <a href="{{route('login')}}" class="links btn btn-primary text-white">Next</a>
         </div>
         
     

@@ -61,3 +61,32 @@
           </nav>
 
           </div>
+
+
+
+
+
+    <div class="container shadow-lg mt-5 rounded border text-center ">
+        <h3 class="mt-3">Login</h3>
+        <form action="{{route('/login-form')}}"  method="post">
+{{ method_field('POST') }}
+    @csrf
+        <div class="form-group mt-3">
+            <label for="Email"> Email
+    
+            </label> <br>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group mt-3 mb-3">
+            <label for="">Password</label> <br>
+            <input type="password" name="password" required>
+        </div>
+        <div class="form-group mt-2 mb-5">
+            <input type="submit" class="btn btn-primary" value="Log in">
+        </div>
+        
+        </form>
+
+    </div>
+          </body>
+</html>
