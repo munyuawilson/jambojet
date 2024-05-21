@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('flights', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('from');
+            $table->string('to');
+            $table->decimal('price', 8, 2);
+            $table->integer('number_of_passengers');
+            $table->boolean('display');
+            $table->date('date');
+            $table->enum('travel', ['one way', 'multiplicity', 'round trip']);
             $table->timestamps();
         });
     }
