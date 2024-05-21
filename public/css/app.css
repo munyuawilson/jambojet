@@ -111,3 +111,41 @@
 input[type="radio"] {
     display: none; /* Hide the default radio button */
 }
+.eldoret{
+  background-image: url('/images/_eldoret-1500-x-500px.jpg');
+  height: 250px;
+}
+.malindi{
+  background-image: url('/images/_malindi-1500-x-500px.jpg');
+  height: 250px;
+}
+.eldoret-price{
+  opacity: 0.8;
+  border-radius: 20px;
+
+  margin-top: 100px;
+}
+.flights{
+  font-weight: bold;
+}
+
+.email-update-h3{
+
+  color: yellow;
+
+
+}
+.subscribe{
+
+  background-color: rgb(184, 184, 10);
+}
+
+.links{
+  text-decoration: none;
+  list-style: none;
+  color:purple;
+}
+.links:hover{
+  color: #e20177; 
+
+}
