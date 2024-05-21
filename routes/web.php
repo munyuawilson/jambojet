@@ -12,3 +12,4 @@ Route::get('/', function () {
 
 Route::post('/search-flight','App\Http\Controllers\SearchFlightController@search')->name('search-flight');
 
+Route::get('/login');
