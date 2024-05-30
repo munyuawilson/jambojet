@@ -68,27 +68,40 @@
 
     <div class="container shadow-lg mt-5 rounded border text-center ">
         <h3 class="mt-3">Login</h3>
-        <form action="{{route('login-form')}}"  method="post">
+        <form action="{{route('signup-form')}}"  method="post">
 {{ method_field('POST') }}
     @csrf
+    <div class="form-group mt-3">
+            <label for="Name"> Name
+    
+            </label> <br>
+            <input type="text" name="name" required>
+            </div>
         <div class="form-group mt-3">
             <label for="Email"> Email
     
             </label> <br>
             <input type="email" name="email" required>
         </div>
+        <div class="form-group mt-3">
+            <label for="Phone"> Phone Number
+    
+            </label> <br>
+            <input type="number" name="phone" placeholder="254" required>
+            </div>
         <div class="form-group mt-3 mb-3">
             <label for="">Password</label> <br>
             <input type="password" name="password" required>
         </div>
         <div class="form-group mt-2 mb-5">
-            <input type="submit" class="btn btn-primary" value="Log in">
+            <input type="submit" class="btn btn-primary" value="Sign Up">
         </div>
         
         </form>
-<div>
-  <p>Don't have an account?<span><a href="{{route('signup')}}"> Sign Up</a></span></p>
+        <div>
+  <p>Already have an account?<span><a href="{{route('login')}}"> Login</a></span></p>
 </div>
     </div>
+   
           </body>
 </html>

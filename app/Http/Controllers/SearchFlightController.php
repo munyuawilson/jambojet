@@ -38,7 +38,7 @@ if (intval($number) > 3) {
         "success" => "Failed",
         "message" => "Passengers cannot be greater than three"
     ]);
-} elseif (intval($number) < 0) {
+} elseif (intval($number) <= 0) {
     return response()->json([
         "success" => "Failed",
         "message" => "Passengers cannot be less than 0"
